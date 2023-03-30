@@ -1,0 +1,60 @@
+:root {
+  --color-primary: #61dafb; /* #ffe26a */
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-title {
+  display: flex;
+  font-weight: 600;
+  padding: 4rem 2rem;
+  font-size: 7rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .game-title {
+    font-size: 5rem;
+  }
+}
+
+.word__2nd {
+  color: white;
+}
+
+.btn-play:hover {
+  background-color: var(--color-primary);
+  color: #333;
+}
+
+.btn-play {
+  width: 5.375rem;
+  height: 5.375rem;
+
+  border: 0.3125rem solid var(--color-primary);
+  border-radius: 0px;
+  background-color: transparent;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  font-family: "Neris Semi Bold", sans-serif;
+  color: white;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.white-bar.sm {
+  bottom: -0.1875rem;
+  height: 0.8125rem;
+  background-color: var(--color-primary);
+}

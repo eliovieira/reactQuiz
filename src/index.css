@@ -1,0 +1,66 @@
+:root {
+  --color-primary: #03d0b6;
+  --color-primary-light: #7bf1e2;
+  --color-primary-dark: #069e89;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-1: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --line: 1px solid var(--color-grey-light-2);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+}
+
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  /*font-size: 82.5%;*/
+}
+
+body {
+  padding: 48px 64px 0px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  /*background: linear-gradient(180deg, #abd699, #75c9b7);*/
+  background-color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* button {
+  background: #1646a0;
+} */
+
+.btn-play:hover {
+  background-color: #ffe26a;
+}
+
+.txtNavy {
+  color: #16123f;
+}

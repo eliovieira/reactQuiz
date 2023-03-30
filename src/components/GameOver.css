@@ -1,0 +1,65 @@
+.scoreTxt {
+  font-size: 4vw;
+  color: #ffe26a;
+}
+
+.final-score {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+:icon-sad::before {
+  opacity: 1;
+}
+
+.icon-sad {
+  opacity: 0.2;
+  animation: blink 1s linear 1;
+}
+
+.icon-happy {
+  animation: blink 0.5s linear 2;
+}
+
+@media (max-width: 700px) {
+  .icon-sad {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .icon-happy {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .game-title {
+    font-size: 4.5rem;
+  }
+}
+
+.final-score__number {
+  padding: 1rem;
+}
+
+.box-score-retry {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.retry {
+  width: 6rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
